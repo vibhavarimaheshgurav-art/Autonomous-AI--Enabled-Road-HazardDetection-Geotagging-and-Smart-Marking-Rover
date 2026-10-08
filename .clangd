@@ -1,0 +1,14 @@
+CompileFlags:
+  Add:
+    - "-xc++"
+    - "-std=c++17"
+    - "-DARDUINO=10819"
+    - "-DESP32"
+    - "-Ia:/MPROJECT/esp32-firmware/include"
+    - "-Ia:/MPROJECT/esp32-firmware"
+    - "-Ia:/MPROJECT/esp32-firmware/rover_firmware"
+    - "-ferror-limit=0"
+    - "-Wno-everything"
+
+Diagnostics:
+  Suppress: "*"

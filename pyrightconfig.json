@@ -1,0 +1,17 @@
+{
+  "venvPath": ".",
+  "venv": ".venv",
+  "pythonVersion": "3.14",
+  "include": [
+    "."
+  ],
+  "exclude": [
+    ".venv",
+    "ml-pipeline/venv"
+  ],
+  "extraPaths": [
+    "ml-pipeline"
+  ],
+  "reportMissingModuleSource": "none",
+  "reportMissingImports": "warning"
+}

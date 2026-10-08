@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "name": "ESP32-Arduino",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/esp32-firmware/include/**",
+        "${workspaceFolder}/esp32-firmware/**",
+        "${workspaceFolder}/esp32-firmware/rover_firmware/**"
+      ],
+      "defines": [
+        "ARDUINO=10819",
+        "ESP32",
+        "BOARD_ESP32_DEVKIT"
+      ],
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-clang-x64"
+    }
+  ],
+  "version": 4
+}
