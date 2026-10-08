@@ -1,0 +1,98 @@
+# ============================================================
+#  Smart Civic Hazard Rover - Root .gitignore
+# ============================================================
+
+# --- SECRETS & CREDENTIALS (NEVER push these) ---------------
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+serviceAccountKey.json
+firebase-adminsdk*.json
+google-credentials.json
+
+# --- Python virtual environments ----------------------------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# --- Node / npm ---------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# --- Frontend build output ----------------------------------
+dashboard/dist/
+dashboard/.env
+backend/.env
+
+# --- ML - Large datasets ------------------------------------
+ml-pipeline/dataset/
+ml-pipeline/dataset_clean/
+ml-pipeline/dataset_clean_test/
+ml-pipeline/dataset_clean_tv/
+ml-pipeline/dataset_final/
+ml-pipeline/dataset_mini/
+ml-pipeline/raw_datasets/
+
+# --- ML - Model weights & checkpoints -----------------------
+ml-pipeline/weights/
+ml-pipeline/runs/
+ml-pipeline/yolov8n.pt
+ml-pipeline/yolov8s.pt
+
+# Root-level YOLO run outputs
+runs/
+
+# --- ML - Python cache inside ml-pipeline -------------------
+ml-pipeline/__pycache__/
+ml-pipeline/models/__pycache__/
+ml-pipeline/.env
+
+# --- Backend - uploaded images & local data store -----------
+backend/uploads/
+backend/data/hazards.json
+backend/data/tasks.json
+backend/data/registered_users.json
+
+# --- ESP32 / Arduino build artifacts ------------------------
+esp32-firmware/**/.pio/
+esp32-firmware/**/build/
+esp32-firmware/**/*.bin
+esp32-firmware/**/*.elf
+esp32-firmware/**/*.map
+
+# --- OS junk ------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# --- IDE / Editor -------------------------------------------
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.idea/
+*.suo
+*.user
+
+# --- Logs ---------------------------------------------------
+*.log
+logs/
+
+# --- Jupyter checkpoints ------------------------------------
+.ipynb_checkpoints/
+
+# --- ESP32 config with real credentials (use config.h.example as template) ---
+esp32-firmware/rover_firmware/config.h
+
